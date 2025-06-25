@@ -1,4 +1,4 @@
-![изображение](https://github.com/user-attachments/assets/749c8799-bd4e-4409-8f31-a5c0cf167dca)# 🗂 PHP + MySQL CRUD App
+🗂 PHP + MySQL CRUD App
 
 A simple CRUD (Create, Read, Update, Delete) web application built with **PHP** and **MySQL**.  
 It supports creating and managing **products** and their **comments**.  
@@ -101,9 +101,8 @@ Refactor codebase into MVC or OOP structure
 
 Improve UI using CSS or Bootstrap
 
-![изображение](https://github.com/user-attachments/assets/9dc870f4-513c-43b3-848c-3c84bf18a1f4)
-
-![изображение](https://github.com/user-attachments/assets/4d597c50-0819-4f60-9fbc-1494a9461c8c)
+![изображение](https://github.com/user-attachments/assets/3aef30a2-1f18-483d-9390-9ac5362c2112)
+![изображение](https://github.com/user-attachments/assets/5d204fd3-07dd-4872-85dc-d9652e5781d2)
 
 
 
