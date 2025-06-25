@@ -1,4 +1,3 @@
-![изображение](https://github.com/user-attachments/assets/1d5f0957-0a8a-49d5-a5f8-246554e94f81)
 🗂 PHP + MySQL CRUD App
 
 Description
@@ -89,6 +88,8 @@ Delete	delete.php
     Improve design with CSS/Bootstrap![изображение](https://github.com/user-attachments/assets/68d32859-8ac2-4839-9935-27e2f51a5d00)
 
 ![изображение](https://github.com/user-attachments/assets/6e4b6ffd-7d4d-4033-98b9-e316e742aad8)
+![изображение](https://github.com/user-attachments/assets/0b0c62c7-8326-4031-a1c3-f636017a2576)
 ![Uploading изображение.png…]()
+
 
 
