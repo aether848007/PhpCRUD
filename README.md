@@ -1,41 +1,47 @@
-🗂 PHP + MySQL CRUD App
+![изображение](https://github.com/user-attachments/assets/749c8799-bd4e-4409-8f31-a5c0cf167dca)# 🗂 PHP + MySQL CRUD App
 
-Description
-A simple CRUD (Create, Read, Update, Delete) web application using PHP and MySQL. The project supports creating and managing products and comments. It uses connect.php to handle database connections and organizes logic inside a vendor/ directory.
-📁 Project Structure
+A simple CRUD (Create, Read, Update, Delete) web application built with **PHP** and **MySQL**.  
+It supports creating and managing **products** and their **comments**.  
+The application follows a modular structure and uses `connect.php` to manage the database connection.
+
+---
+
+## 📁 Project Structure
 
 crud.local/
-├── .osp/                    # OSPanel project files (optional)
+├── .osp/ # OSPanel project files (optional)
 ├── config/
-│   └── connect.php          # Database connection script
-├── vendor/                  # Core application logic
-│   ├── create.php           # Handles product creation
-│   ├── create_comment.php   # Handles comment creation
-│   ├── delete.php           # Deletes product/comment
-│   ├── update.php           # Updates product data
-│   ├── index.php            # Homepage, displays all records
-│   ├── product.php          # Displays a single product
-│   └── update.php           # Update form and logic
+│ └── connect.php # Database connection script
+├── vendor/ # Core application logic
+│ ├── create.php # Handles product creation
+│ ├── create_comment.php # Handles comment creation
+│ ├── delete.php # Deletes product or comment
+│ ├── update.php # Product update form and logic
+│ ├── index.php # Homepage, displays all records
+│ └── product.php # Displays a single product
 
-⚙ Requirements
+---
 
-    PHP 7.0+
+## ⚙ Requirements
 
-    MySQL Server
+- PHP 7.0 or higher  
+- MySQL Server  
+- OSPanel / XAMPP / Local Apache environment  
+- PhpMyAdmin (for managing the database easily)
 
-    OSPanel / XAMPP / Local Apache environment
+---
 
-    PhpMyAdmin (for managing the database)
+## 🚀 Getting Started
 
-🚀 Getting Started
+1. Clone the Repository
 
-    Clone or download this project
-
+```bash
 git clone https://github.com/<your-username>/<repo-name>.git
+Replace <your-username> and <repo-name> with your actual GitHub details.
 
-Set up your database
-Use PhpMyAdmin or MySQL CLI to create a database and a table:
+2. Set Up the Database
 
+Using PhpMyAdmin or MySQL CLI, run the following SQL:
 CREATE TABLE `products` (
   `id` INT AUTO_INCREMENT PRIMARY KEY,
   `name` VARCHAR(255) NOT NULL,
@@ -51,15 +57,19 @@ CREATE TABLE `comments` (
   FOREIGN KEY (`product_id`) REFERENCES products(`id`) ON DELETE CASCADE
 );
 
-Configure your DB credentials
-In config/connect.php, update the values:
+3. Configure Database Connection
 
+Open config/connect.php and set your DB credentials:
 $conn = new mysqli('localhost', 'your_username', 'your_password', 'your_database');
 
-Run the project locally
-Make sure it's located in your OSPanel directory (/domains/crud.local/) and visit:
+4. Run the Project Locally
 
-    http://crud.local/vendor/index.php
+    Place the project inside your local server’s directory (e.g., /domains/crud.local/ in OSPanel).
+
+    Add a local domain in hosts file (e.g., crud.local).
+
+    Visit in your browser:
+http://crud.local/vendor/index.php
 
 🧩 Features
 
@@ -69,27 +79,31 @@ Make sure it's located in your OSPanel directory (/domains/crud.local/) and visi
 
     📝 Edit existing products
 
-    ❌ Delete products
+    💬 Add comments to products
 
-📐 CRUD Overview
-Action	File
-Create	create.php, create_comment.php
-Read	index.php, product.php
-Update	update.php
-Delete	delete.php
-🔧 To Improve
+    ❌ Delete products and comments
 
-    Add form validation
+| Action | Files                              |
+| ------ | ---------------------------------- |
+| Create | `create.php`, `create_comment.php` |
+| Read   | `index.php`, `product.php`         |
+| Update | `update.php`                       |
+| Delete | `delete.php`                       |
 
-    Use prepared statements (MySQLi or PDO) to prevent SQL injection
 
-    Refactor into MVC or OOP structure
+🔧 Future Improvements
 
-    Improve design with CSS/Bootstrap![изображение](https://github.com/user-attachments/assets/68d32859-8ac2-4839-9935-27e2f51a5d00)
+Add form validation
 
-![изображение](https://github.com/user-attachments/assets/6e4b6ffd-7d4d-4033-98b9-e316e742aad8)
-![изображение](https://github.com/user-attachments/assets/0b0c62c7-8326-4031-a1c3-f636017a2576)
-![Uploading изображение.png…]()
+Use prepared statements (MySQLi/PDO) to prevent SQL injection
+
+Refactor codebase into MVC or OOP structure
+
+Improve UI using CSS or Bootstrap
+
+![изображение](https://github.com/user-attachments/assets/9dc870f4-513c-43b3-848c-3c84bf18a1f4)
+
+![изображение](https://github.com/user-attachments/assets/4d597c50-0819-4f60-9fbc-1494a9461c8c)
 
 
 
