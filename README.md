@@ -101,8 +101,6 @@ Refactor codebase into MVC or OOP structure
 
 Improve UI using CSS or Bootstrap
 
-![изображение](https://github.com/user-attachments/assets/3aef30a2-1f18-483d-9390-9ac5362c2112)
-![изображение](https://github.com/user-attachments/assets/5d204fd3-07dd-4872-85dc-d9652e5781d2)
 
 
 
